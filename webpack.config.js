@@ -15,9 +15,9 @@ module.exports = {
           hash: true,
           filename: 'index.html',
           inject: 'body',
-          title: 'Pizza Piacere',
+          title: 'Sabor Venezolano',
           meta: {
-            description: 'Handcrafted Italian pizzas.'
+            description: 'Family-owned Venezuelan restaurant in Toronto serving authentic, home-style dishes with warm hospitality.'
           }
       })
     ],
