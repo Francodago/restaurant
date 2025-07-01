@@ -13,9 +13,12 @@ module.exports = {
     plugins:[
       new HtmlWebpackPlugin({
           hash: true,
-          template: './src/index.html',
           filename: 'index.html',
-          inject: 'body'
+          inject: 'body',
+          title: 'Pizza Piacere',
+          meta: {
+            description: 'Handcrafted Italian pizzas.'
+          }
       })
     ],
     devServer: {
@@ -30,10 +33,10 @@ module.exports = {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
         },
-        // {
-        //   test: /\.html$/i,
-        //   loader: "html-loader",
-        // },
+        {
+          test: /\.html$/i,
+          loader: "html-loader",
+        },
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
