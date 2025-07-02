@@ -13,8 +13,8 @@ const menuBtn = document.createElement("button");
 menuBtn.classList.add("menu-btn");
 menuBtn.textContent="Menu";
 const aboutBtn = document.createElement("button");
-aboutBtn.classList.add("about-btn");
-aboutBtn.textContent="About";
+aboutBtn.classList.add("contact-btn");
+aboutBtn.textContent="Contact";
 navBar.append(homeBtn, menuBtn, aboutBtn);
 body.insertAdjacentElement("afterbegin", header)
 body.insertAdjacentElement("beforeend", content);

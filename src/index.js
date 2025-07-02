@@ -2,7 +2,7 @@
 import loadPage from "./loadPage";
 import loadHome from "./home";
 import loadMenu from "./menu";
-import loadAbout from "./contact";
+import loadContact from "./contact";
 loadPage();
 loadHome();
 
@@ -18,6 +18,12 @@ const menuBtn = document.querySelector(".menu-btn");
 menuBtn.addEventListener("click", ()=>{
     clearpreviousContent();
     loadMenu();
+});
+
+const contactBtn = document.querySelector(".contact-btn");
+contactBtn.addEventListener("click",()=>{
+clearpreviousContent();
+loadContact();
 });
 
 function clearpreviousContent(){
