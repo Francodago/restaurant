@@ -4,6 +4,7 @@ const content = document.createElement("div");
 content.id="content";
 const header =document.createElement("header");
 const h1 = document.createElement("h1");
+h1.textContent="Sabor Venezolano";
 const navBar =document.createElement("nav");
 const homeBtn = document.createElement("button");
 homeBtn.classList.add("home-btn");

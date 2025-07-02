@@ -5,3 +5,7 @@ import loadMenu from "./menu";
 import loadAbout from "./about";
 loadPage();
 loadHome();
+const menuBtn = document.querySelector(".menu-btn");
+menuBtn.addEventListener("click", ()=>{
+    loadMenu();
+});
