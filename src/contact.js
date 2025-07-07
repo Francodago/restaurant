@@ -1,16 +1,21 @@
 export default function loadContact(){
     const content = document.querySelector("#content");
     const menuContainer = document.createElement("div");
-    menuContainer.classList.add("contact-content");
+    menuContainer.classList.add("contact-container");
     const contactHeader = document.createElement("div");
     contactHeader.classList.add("contact-header");
     const h2 = document.createElement("h2");
     h2.textContent="Bringing the warmth of Venezuela to Toronto's breezy waterfront";
+    const buttonContainer = document.createElement("div");
+    buttonContainer.classList.add("contact-buttons");
     const button1 = document.createElement("button");
+    button1.classList.add("contact-btns")
     button1.textContent="Reservations";
     const button2 = document.createElement("button");  
+    button2.classList.add("contact-btns");
     button2.textContent="Get Directions";
-    contactHeader.append(h2, button1, button2);
+    buttonContainer.append(button1, button2)
+    contactHeader.append(h2, buttonContainer);
     const contactContent = document.createElement("div");
     contactContent.classList.add("contact-content");
 

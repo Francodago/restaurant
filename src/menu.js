@@ -7,6 +7,12 @@ import tresLeches from "./assets/images/tres-leches.jpg";
 
 export default function loadMenu(){
 const content = document.querySelector("#content");
+const menu = document.createElement("div");
+menu.classList.add("menu");
+const menuHeader = document.createElement("h2");
+menuHeader.classList.add("menu-heading");
+menuHeader.textContent="Our Menu";
+
 const menuContainer = document.createElement("div");
 menuContainer.classList.add("menu-content");
 menuContainer.append(createMenuItems("teque", teques, "Cheese Fingers", "Tequeños (6pcs)", "$9.99", `Golden, crispy, and irresistibly cheesy - our <b>Tequeños</b> are the ultimate Venezuelan comfort snack. Each of the 6 handcrafted sticks is wrapped in flaky dough and 
@@ -33,7 +39,9 @@ createMenuItems("TresLeches", tresLeches, "Torta Tres Leches", "Torta Tres Leche
 blend of <b>three milks</b>: sweetened condensed, evaporated, and fresh cream. Each slice is irresistibly moist without being heavy, topped with a smooth layer of <b>whipped cream</b> and a sprinkle of cinnamon. 
 Served chilled, this beloved Latin dessert delivers pure comfort in every creamy bite.`)
 );
-content.appendChild(menuContainer);
+
+menu.append(menuHeader, menuContainer);
+content.appendChild(menu);
 
 };
 
@@ -43,6 +51,7 @@ const createMenuItems = (className, imgPath,imgAlt, name, price, description)=>{
     const image = document.createElement("img");
     image.src = imgPath;
     image.alt=imgAlt;
+    image.classList.add("menu-item-img");
     const itemText = document.createElement("div");
     itemText.classList.add("item-text")
     const h3 = document.createElement("h3");

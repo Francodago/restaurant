@@ -7,13 +7,13 @@ const h1 = document.createElement("h1");
 h1.textContent="Sabor Venezolano";
 const navBar =document.createElement("nav");
 const homeBtn = document.createElement("button");
-homeBtn.classList.add("home-btn");
+homeBtn.classList.add("home-btn", "buttons");
 homeBtn.textContent="Home";
 const menuBtn = document.createElement("button");
-menuBtn.classList.add("menu-btn");
+menuBtn.classList.add("menu-btn", "buttons");
 menuBtn.textContent="Menu";
 const aboutBtn = document.createElement("button");
-aboutBtn.classList.add("contact-btn");
+aboutBtn.classList.add("contact-btn", "buttons");
 aboutBtn.textContent="Contact";
 navBar.append(homeBtn, menuBtn, aboutBtn);
 body.insertAdjacentElement("afterbegin", header)

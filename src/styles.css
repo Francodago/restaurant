@@ -25,9 +25,156 @@
     padding: 0;
 }
 body{
+    height: 100vh;
     font-family: "Raleway", system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5eaf5;
+}
+header{
+    color: white;
+    background-color: rgb(65, 65, 65);
+    background-image: url("./assets/images/vene-restaurant.jpg");
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-position: left 40% top 10%;
+    background-blend-mode: multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#content{
+    flex-grow: 2;
+}
+nav{
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.buttons{
+    font-style: italic;
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Raleway, system-ui, sans-serif;
+    background-color: #e5eaf5;
 }
 h1{
     font-family: "Lobster";
     font-weight: 700;
+    font-size: 4rem;
+}
+h2{
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Contact page styles */
+.contact-container{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.contact-header{
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-buttons{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+.directions-section, .hours-section, .social-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-btns{
+    background: transparent;
+    padding: 1.5rem 3rem;
+    font-family:Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+/* Style for the menu page */
+.menu{
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-heading{
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+.menu-content{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    width: 80%;
+    /* border: solid black 2px; */
+}
+.menu-item{
+    display: flex;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.menu-item-img{
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5rem;
+}
+.item-text{
+    flex-grow: 1;
+}
+.item-heading{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.item-name{
+margin-right: 1.5rem;
+}
+.item-description{
+line-height: 1.5;
+width: 80%;
+}
+/* styles for home page */
+.home-container{
+    display: flex;
+    justify-content:center ;
+    width:100%;
+    height: 100%;
+    
+}
+.home-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem;
+    gap: 2rem;
+}
+.home-img{
+    width: 800px;
+    height: 400px;
 }
